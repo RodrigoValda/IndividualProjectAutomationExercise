@@ -15,8 +15,10 @@ public class CommonMethods {
     public static void logout() {
         topBarMenu = new TopBarMenu();
         topBarMenu.logout();
-        /*HomeAutomationPage homeAutomationPage;
-        homeAutomationPage = pageTransporter.navigateToHomePage();
-        homeAutomationPage.topBarMenu.logout();*/
+    }
+
+    public static void goLogin(){
+        topBarMenu = new TopBarMenu();
+        topBarMenu.goToLoginButton();
     }
 }

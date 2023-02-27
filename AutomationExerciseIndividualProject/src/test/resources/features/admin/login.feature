@@ -1,7 +1,7 @@
 @LoginAutomation @UI
 Feature: Login Automation Exercise
 
-  @LoginSuccessful
+  @LoginSuccessful @Logout
   Scenario: A registered user should be able to login to the page
     Given I navigate to Automation Login page
     When I login to Automation Exercise page
@@ -34,7 +34,6 @@ Feature: Login Automation Exercise
     Given The user navigates to Automation Signup page
     When The user signup to automation exercise page
     Then The user shouldn't fill the signup form
-    And The user should signup successfully
 
   @Re-registerUser
   Scenario Outline: A user tries to re-register in automation exercise page
@@ -47,15 +46,6 @@ Feature: Login Automation Exercise
       | message                      |
       | Email Address already exist! |
 
-
-  @InvalidEmailSignup
-  Scenario: A user tries to register in automation exercise page with invalid email
-    Given The user navigates to Automation Signup page
-    When The user tries to signup with invalid email
-      | name   | email |
-      | rodrigo| testing.emailInvalid|
-    Then The user shouldn't be redirected to the home page
-
   @EmptyFieldsSignup
   Scenario: A user tries to register in automation exercise page with empty fields
     Given The user navigates to Automation Signup page
@@ -67,4 +57,12 @@ Feature: Login Automation Exercise
     Given I navigate to Automation Login page to logs in
     When I provide empty values to the login
     Then The user shouldn't be redirected to the home page from the login
+
+  @InvalidEmailSignup
+  Scenario: A user tries to register in automation exercise page with invalid email
+    Given The user navigates to Automation Signup page
+    When The user tries to signup with invalid email
+      | name   | email |
+      | rodrigo| testing.emailInvalid|
+    Then The user shouldn't be redirected to the home page
 

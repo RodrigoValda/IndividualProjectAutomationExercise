@@ -19,8 +19,8 @@ public class ProductAutomationPage extends BaseAutomationPage {
     WebElement productMessage;
     @FindBy(xpath = "//a[@href='/product_details/1']")
     WebElement viewProductButton;
-    @FindBy(xpath = "//div[@id='Kids']")
-    WebElement kidsCategories;
+    @FindBy(xpath = "//button[@class='btn btn-success close-modal btn-block']")
+    WebElement continueShoppingButton;
 
     public ProductAutomationPage(){
         PageFactory.initElements(driver,this);
@@ -62,6 +62,10 @@ public class ProductAutomationPage extends BaseAutomationPage {
     public boolean productMessageDisplayed(){
         productMessage = wait.until(ExpectedConditions.visibilityOf(productMessage));
         return productMessage.isDisplayed();
+    }
+
+    public void continueShopping(){
+        continueShoppingButton.click();
     }
 
     public boolean categoryIsDisplayed(String brand){

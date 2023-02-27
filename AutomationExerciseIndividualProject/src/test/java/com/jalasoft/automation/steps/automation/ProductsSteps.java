@@ -40,6 +40,7 @@ public class ProductsSteps {
     @When("The message should be displayed")
     public void verifyMessageProductAddedToCart(){
         Assert.assertTrue(productAutomationPage.productMessageDisplayed());
+        productAutomationPage.continueShopping();
     }
 
     @When("I go to the product details of the selected product")
@@ -76,11 +77,14 @@ public class ProductsSteps {
     }
 
     @Then("The products of the selected \"(.*?)\" should be displayed$")
-    public void displayBrandSelected(){
+    public void displayBrandSelected(String brand){
         boolean brandSelectedRedirected = brandProductsAutomationPage.titleTextIsDisplayed();
         boolean brandTagDisplayed = brandProductsAutomationPage.brandTagIsDisplayed();
-        Assert.assertTrue(brandSelectedRedirected);
-        Assert.assertTrue(brandTagDisplayed);
+        String actualResult = brandProductsAutomationPage.brandTagGetText();
+
+        Assert.assertTrue(brandSelectedRedirected,"Non redirected to the brand selected");
+        Assert.assertTrue(brandTagDisplayed,"The tag of the brand selected is not displayed");
+        Assert.assertEquals(brand, actualResult,"No redirected to the brand selected");
     }
 
     @Then("I modify the \"(.*?)\" of products$")
@@ -102,6 +106,7 @@ public class ProductsSteps {
     public void errorDisplayErrorMessage(){
         boolean messageIsDisplayed = viewProductAutomationPage.messageAddProductToCart();
         Assert.assertTrue(messageIsDisplayed);
+        viewProductAutomationPage.setContinueShopping();
     }
 
     @Then("I send the review of the product$")

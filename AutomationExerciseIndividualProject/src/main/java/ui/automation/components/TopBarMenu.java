@@ -20,6 +20,8 @@ public class TopBarMenu extends BasePageObject {
     @FindBy(xpath = "//a[@href='/delete_account']")
     WebElement deleteAccountButton;
 
+    @FindBy(xpath = "")
+    WebElement loginButton;
     public TopBarMenu(){
         PageFactory.initElements(driver,this);
         waitUntilPageObjectIsLoaded();
@@ -47,8 +49,11 @@ public class TopBarMenu extends BasePageObject {
         return deleteAccountButton.isDisplayed();
     }
 
-    public LoginAutomationPage logout(){
+    public void logout(){
         clickLogoutButton();
-        return new LoginAutomationPage();
+    }
+
+    public void goToLoginButton(){
+        loginButton.click();
     }
 }

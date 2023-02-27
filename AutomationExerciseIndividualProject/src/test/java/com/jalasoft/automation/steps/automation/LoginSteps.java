@@ -103,6 +103,7 @@ public class LoginSteps {
     public void redirectUserAccountCreated(){
         boolean AccountCreatedTextDisplayed = accountCreatedAutomationPage.messageAccountCreatedDisplayed();
         Assert.assertTrue(AccountCreatedTextDisplayed);
+        accountCreatedAutomationPage.continueButtonClick();
     }
 
     @Given("The user tries to signup with an already exist user$")
@@ -157,12 +158,16 @@ public class LoginSteps {
         String city = "";
         String zipcode = "";
         String mobileNumber = "";
-        accountCreatedAutomationPage = signupFormAutomationPage.signupNewUser(password,firstName,
-                lastName,address,state,city,zipcode,mobileNumber);
         boolean nameTextBox = signupFormAutomationPage.isNameTextBoxDisplayed();
         boolean emailTextBox = signupFormAutomationPage.isEmailTextBoxDisplayed();
         Assert.assertTrue(nameTextBox);
         Assert.assertTrue(emailTextBox);
+
+        accountCreatedAutomationPage = signupFormAutomationPage.signupNewUser(password,firstName,
+                lastName,address,state,city,zipcode,mobileNumber);
+
+        accountCreatedAutomationPage.continueButtonClick();
+
     }
 
     @When("I provide empty values to the login")

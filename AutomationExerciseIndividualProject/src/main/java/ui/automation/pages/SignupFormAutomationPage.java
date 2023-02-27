@@ -113,7 +113,9 @@ public class SignupFormAutomationPage extends BaseAutomationPage {
     }
     @Override
     public void waitUntilPageObjectIsLoaded() throws WebDriverException {
+        UIMethods.moveToWebElement(nameTextBox);
         nameTextBox = wait.until(ExpectedConditions.visibilityOf(nameTextBox));
+        UIMethods.moveToWebElement(emailTextBox);
         emailTextBox = wait.until(ExpectedConditions.visibilityOf(emailTextBox));
     }
 

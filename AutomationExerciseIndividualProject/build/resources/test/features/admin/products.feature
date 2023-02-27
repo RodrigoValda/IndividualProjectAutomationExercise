@@ -36,6 +36,10 @@
         | H&M    |
         | Madame |
         | Mast & Harbour |
+        | Kookie Kids    |
+        | Allen Solly Junior |
+        | Babyhug            |
+        | Biba               |
 
     @ModifyProductQuantity
     Scenario Outline: A user should be able to modify the product's quantity
