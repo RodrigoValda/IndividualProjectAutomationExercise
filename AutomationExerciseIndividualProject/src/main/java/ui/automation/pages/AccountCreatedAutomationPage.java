@@ -10,6 +10,8 @@ import ui.automation.BaseAutomationPage;
 public class AccountCreatedAutomationPage extends BaseAutomationPage {
     @FindBy(xpath = "//h2[@data-qa='account-created']")
     WebElement accountCreatedText;
+    @FindBy(xpath = "//a[@data-qa='continue-button']")
+    WebElement continueButton;
 
     public AccountCreatedAutomationPage(){
         PageFactory.initElements(driver,this);
@@ -23,5 +25,9 @@ public class AccountCreatedAutomationPage extends BaseAutomationPage {
 
     public boolean messageAccountCreatedDisplayed(){
         return accountCreatedText.isDisplayed();
+    }
+
+    public void continueButtonClick(){
+        continueButton.click();
     }
 }

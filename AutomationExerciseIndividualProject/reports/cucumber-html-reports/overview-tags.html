@@ -48,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@AddProductDetails",  "@AddProductToCart",  "@DeployCategory",  "@FilterByBrands",  "@ModifyProductQuantity",  "@ProductsAutomation",  "@SendReview",  "@UI",  "@ViewProduct", ] ,
+        labels:  [ "@AddProductDetails",  "@AddProductToCart",  "@DeployCategory",  "@EmptyFieldsLogin",  "@EmptyFieldsSignup",  "@FilterByBrands",  "@InvalidEmailSignup",  "@LoginAutomation",  "@LoginSuccessful",  "@Logout",  "@ModifyProductQuantity",  "@ProductsAutomation",  "@Re-registerUser",  "@SendReview",  "@SignupUser",  "@SignupWithoutInformation",  "@UI",  "@ViewProduct",  "@WrongCredentials", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  66.67,  96.15,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  99.01,  100.00,  100.00, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 25.00,  33.33,  14.29,  33.33,  33.33,  25.93,  25.00,  25.93,  33.33, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  33.33,  3.85,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.99,  0.00,  0.00, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 75.00,  66.67,  85.71,  66.67,  66.67,  74.07,  75.00,  74.07,  66.67, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             }
         ]
     };
@@ -135,7 +135,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
         <td>10</td>
-      <td>22 feb. 2023, 16:43</td>
+      <td>26 feb. 2023, 23:22</td>
     </tr>
   </tbody>
 </table>
@@ -199,60 +199,111 @@ $(document).ready(function() {
       <tr>
         <td class="tagname"><a href="report-tag_1869611251.html">@AddProductDetails</a></td>
 
+        <td      class="passed"    >4</td>
         <td >0</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >3</td>
+        <td >0</td>
         <td >0</td>
         <td >0</td>
         <td class="total">4</td>
 
+        <td  class="passed"    >1</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="69999500">0.069</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="4331243400">4.331</td>
+        <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_3020004168.html">@AddProductToCart</a></td>
 
+        <td      class="passed"    >3</td>
         <td >0</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >2</td>
+        <td >0</td>
         <td >0</td>
         <td >0</td>
         <td class="total">3</td>
 
+        <td  class="passed"    >1</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="13785245200">13.785</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="5588354300">5.588</td>
+        <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_1152849764.html">@DeployCategory</a></td>
 
-        <td >0</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >6</td>
+        <td      class="passed"    >9</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">7</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">9</td>
 
+        <td  class="passed"    >3</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
+        <td class="total">3</td>
+
+        <td class="duration" data-value="6555743000">6.555</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_3989393666.html">@EmptyFieldsLogin</a></td>
+
+        <td      class="passed"    >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="92999400">0.092</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="1332446800">1.332</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_3606987453.html">@EmptyFieldsSignup</a></td>
+
+        <td      class="passed"    >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="629749600">0.629</td>
+        <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_3946239226.html">@FilterByBrands</a></td>
 
+        <td      class="passed"    >32</td>
         <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">32</td>
+
+        <td  class="passed"    >8</td>
+        <td >0</td>
+        <td class="total">8</td>
+
+        <td class="duration" data-value="36778900400">36.778</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_2553304508.html">@InvalidEmailSignup</a></td>
+
+        <td      class="passed"    >2</td>
         <td      class="failed"    >1</td>
-        <td     class="skipped"   >2</td>
+        <td >0</td>
         <td >0</td>
         <td >0</td>
         <td class="total">3</td>
@@ -261,126 +312,245 @@ $(document).ready(function() {
         <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="63990500">0.063</td>
+        <td class="duration" data-value="12087663000">12.087</td>
         <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_620011775.html">@LoginAutomation</a></td>
+
+        <td      class="passed"    >25</td>
+        <td      class="failed"    >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">26</td>
+
+        <td  class="passed"    >7</td>
+        <td  class="failed"    >1</td>
+        <td class="total">8</td>
+
+        <td class="duration" data-value="51083292100">51.083</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_3837146754.html">@LoginSuccessful</a></td>
+
+        <td      class="passed"    >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="16583190400">16.583</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_1099682281.html">@Logout</a></td>
+
+        <td      class="passed"    >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="16583190400">16.583</td>
+        <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_2472256031.html">@ModifyProductQuantity</a></td>
 
-        <td >0</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >2</td>
+        <td      class="passed"    >20</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">3</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">20</td>
 
+        <td  class="passed"    >4</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
+        <td class="total">4</td>
 
-        <td class="duration" data-value="107998000">0.107</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="19412536500">19.412</td>
+        <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_2372043258.html">@ProductsAutomation</a></td>
 
-        <td >0</td>
-        <td      class="failed"    >7</td>
-        <td     class="skipped"   >20</td>
+        <td      class="passed"    >75</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">27</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">75</td>
 
+        <td  class="passed"    >19</td>
         <td >0</td>
-        <td  class="failed"    >7</td>
-        <td class="total">7</td>
+        <td class="total">19</td>
 
-        <td class="duration" data-value="14264227000">14.264</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="79990553100">1:19.990</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_1350481415.html">@Re-registerUser</a></td>
+
+        <td      class="passed"    >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="1112488800">1.112</td>
+        <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_1247836511.html">@SendReview</a></td>
 
+        <td      class="passed"    >4</td>
         <td >0</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >3</td>
+        <td >0</td>
         <td >0</td>
         <td >0</td>
         <td class="total">4</td>
 
+        <td  class="passed"    >1</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="58996900">0.058</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="3381379800">3.381</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_294523234.html">@SignupUser</a></td>
+
+        <td      class="passed"    >5</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">5</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="10433182100">10.433</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_4038904539.html">@SignupWithoutInformation</a></td>
+
+        <td      class="passed"    >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="7782681800">7.782</td>
+        <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_2147547859.html">@UI</a></td>
 
+        <td      class="passed"    >100</td>
+        <td      class="failed"    >1</td>
         <td >0</td>
-        <td      class="failed"    >7</td>
-        <td     class="skipped"   >20</td>
         <td >0</td>
         <td >0</td>
+        <td class="total">101</td>
+
+        <td  class="passed"    >26</td>
+        <td  class="failed"    >1</td>
         <td class="total">27</td>
 
-        <td >0</td>
-        <td  class="failed"    >7</td>
-        <td class="total">7</td>
-
-        <td class="duration" data-value="14264227000">14.264</td>
+        <td class="duration" data-value="131073845200">2:11.073</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_3167671849.html">@ViewProduct</a></td>
 
+        <td      class="passed"    >3</td>
         <td >0</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >2</td>
+        <td >0</td>
         <td >0</td>
         <td >0</td>
         <td class="total">3</td>
 
+        <td  class="passed"    >1</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="84997500">0.084</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="3942395700">3.942</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_1330824046.html">@WrongCredentials</a></td>
+
+        <td      class="passed"    >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="1121889600">1.121</td>
+        <td class="passed">Passed</td>
       </tr>
   </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
+      <td>303</td>
+      <td>3</td>
       <td>0</td>
-      <td>21</td>
-      <td>60</td>
       <td>0</td>
       <td>0</td>
-      <td>81</td>
+      <td>306</td>
 
-      <td>0</td>
-      <td>21</td>
-      <td>21</td>
+      <td>65</td>
+      <td>17</td>
+      <td>82</td>
 
-      <td class="duration">42.792</td>
-      <td>9</td>
+      <td class="duration">6:49.804</td>
+      <td>19</td>
     </tr>
     <tr>
       <td></td>
+      <td>99.02%</td>
+      <td>0.98%</td>
       <td>0.00%</td>
-      <td>25.93%</td>
-      <td>74.07%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>0.00%</td>
-      <td>100.00%</td>
+      <td>79.27%</td>
+      <td>20.73%</td>
       <td></td>
       <td></td>
-      <td>0.00%</td>
+      <td>50.00%</td>
     </tr>
   </tfoot>
 </table>

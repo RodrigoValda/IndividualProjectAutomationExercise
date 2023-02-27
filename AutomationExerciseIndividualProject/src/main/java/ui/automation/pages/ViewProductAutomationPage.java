@@ -30,6 +30,9 @@ public class ViewProductAutomationPage extends BaseAutomationPage {
     WebElement successfulAlert;
     @FindBy(xpath = "//button[@class='btn btn-success close-modal btn-block']")
     WebElement buttonSuccessfulAlertButton;
+
+    @FindBy(xpath = "//button[@class='btn btn-success close-modal btn-block']")
+    WebElement continueShopping;
     public ViewProductAutomationPage(){
         PageFactory.initElements(driver,this);
         waitUntilPageObjectIsLoaded();
@@ -75,6 +78,10 @@ public class ViewProductAutomationPage extends BaseAutomationPage {
     }
     public void clickSuccessfulAlertMessageAddCart(){
         buttonSuccessfulAlertButton.click();
+    }
+
+    public void setContinueShopping(){
+        continueShopping.click();
     }
 
     public boolean successAlertDisplayed(){

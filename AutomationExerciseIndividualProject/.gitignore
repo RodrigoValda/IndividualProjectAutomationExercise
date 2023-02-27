@@ -28,5 +28,6 @@ hs_err_pid*
 bin/
 # Ignore Gradle project-specific cache directory
 .gradle
+build
 
 

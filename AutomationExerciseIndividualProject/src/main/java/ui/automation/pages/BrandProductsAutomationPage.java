@@ -30,4 +30,8 @@ public class BrandProductsAutomationPage extends BaseAutomationPage {
     public boolean brandTagIsDisplayed(){
         return brandTag.isDisplayed();
     }
+
+    public String brandTagGetText(){
+        return brandTag.getText();
+    }
 }
